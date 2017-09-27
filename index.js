@@ -135,6 +135,8 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  e.preventDefault()
+  e.stopPropagation()
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
@@ -144,11 +146,11 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    if (e.which === LEFT_ARROW) {
-     e.preventDefault()
-     e.stopPropagation()
+    //  e.preventDefault()
+    //  e.stopPropagation()
      moveDodgerLeft()
    } else if (e.which === RIGHT_ARROW) {
-     e.preventDefault()
+    //  e.preventDefault()
      moveDodgerRight()
    } else {
    }
